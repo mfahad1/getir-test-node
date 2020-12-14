@@ -1,1 +1,1 @@
-web:npm install && ts-node src/server.ts
+web: node src/server.ts
