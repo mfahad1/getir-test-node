@@ -27,7 +27,7 @@ We have two options to run project locally.
 
 &nbsp;
 
-## `Running the project Locally`
+## `Run project testning the project Locally`
 
 To run test. Execute following command
 ```npm run test```
