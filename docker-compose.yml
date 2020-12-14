@@ -1,0 +1,20 @@
+
+
+version: "2"
+services:
+    api:
+        build: .
+        command: npm run watch
+        volumes:
+            - .:/usr/app/
+            - /usr/app/node_modules
+        environment:
+            NODE_ENV: development
+            DATABASE_URI: mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true&replicaSet=Cluster0-shard-0&authSource=admin
+
+    school_docs:
+        image: swaggerapi/swagger-ui:latest
+        environment:
+            API_URL: http://localhost:3200/swagger.json
+        ports:
+            - 3001:8080
