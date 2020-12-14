@@ -9,7 +9,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.wrapAsync = void 0;
 function wrapAsync(fn) {
     return function (_req, _res, _next) {
         return __awaiter(this, void 0, void 0, function* () {
