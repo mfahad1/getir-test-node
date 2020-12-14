@@ -5,8 +5,23 @@
 
 
 I have hosted the test on heroku 
-https://testprojectfahad.web.app/
+At https://getir-test-fahad.herokuapp.com
 
+Required POST END POINT is located at
+```https://getir-test-fahad.herokuapp.com/records```
+
+Here is the sample CURL request to test
+
+``
+curl -X POST https://getir-test-fahad.herokuapp.com/records  -H 'cache-control: no-cache'  -H 'content-type: application/json' -H 'postman-token: 898c3c09-7ecf-37b5-3edc-aacdaf1bac41'  -d '{ "startDate": "2017-01-26", "endDate": "2017-02-02", "minCount": 170, "maxCount": 310 }'
+``
+
+&nbsp;
+
+## Swagger API Documentation
+Swagger API will be available on port ```3001```
+
+http://localhost:3001/
 &nbsp;
 
 ## `Running the project Locally`
@@ -27,6 +42,13 @@ We have two options to run project locally.
 
 &nbsp;
 
+## `Run project test cases`
+
+To run test. Execute following command
+```npm run test```
+
+&nbsp;
+
 ## `Post Endpoint to search records`
 
 ```
@@ -44,8 +66,3 @@ Postman-Token: 3c4d957b-3bdb-c674-8ac0-8a9ed71664bc
 }
 
 ```
-
-## Swagger API Documentation
-Swagger API will be available on port ```3001```
-
-http://localhost:3001/

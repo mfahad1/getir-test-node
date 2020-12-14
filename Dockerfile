@@ -7,4 +7,4 @@ RUN npm install --silent
 
 COPY . .
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "watch", "|", "npm", "run", "bunyan", "-o", "simple"]

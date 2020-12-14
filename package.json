@@ -4,10 +4,9 @@
   "author": "Muhammad Fahad Azhar <mfahadaz1@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "watch": "./node_modules/nodemon/bin/nodemon.js src/server.ts",
+    "watch": "nodemon src/server.ts",
     "lint": "npm run tsc --noEmit && npm run eslint . --ext .js,.jsx,.ts,.tsx",
-    "test": "jest",
-    "start": "node dist/server.js"
+    "test": "jest"
   },
   "dependencies": {
     "@hapi/boom": "^9.1.0",

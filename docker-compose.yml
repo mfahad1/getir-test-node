@@ -8,6 +8,8 @@ services:
         volumes:
             - .:/usr/app/
             - /usr/app/node_modules
+        ports:
+            - "3200:3200"
         environment:
             NODE_ENV: development
             DATABASE_URI: mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true&replicaSet=Cluster0-shard-0&authSource=admin

@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import express from 'express';
@@ -41,8 +43,8 @@ async function start(): Promise<void> {
     app.use(ErrorHandler);
 
     // Kick it off!
-    app.listen(process.env.PORT || 5000, async () => {
-        logger.info({ port: process.env.PORT }, 'Hey! I\'m listening...');
+    app.listen(config.server.port, async () => {
+        logger.info({ port: config.server.port }, 'Hey! I\'m listening...');
     });
 }
 
